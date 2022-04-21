@@ -28,5 +28,11 @@ public class ItemFacade extends AbstractFacade<Item> implements ItemFacadeLocal 
     public ItemFacade() {
         super(Item.class);
     }
+
+    @Override
+    public void addItem(Item item) {
+     //add an item to the database
+     create(item);
+    }
     
 }

@@ -21,14 +21,22 @@ public class Item implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-  private String description;
+    
+    private Long id;
+@Temporal(TemporalType.TIMESTAMP)
+    private Date creationDate;
+private String description;
     private Integer qty;
     private Double unitPrice;
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date creationDate;
-    private Long id;
-
     public Item() {
+    }
+
+    public Date getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
     }
 
     public String getDescription() {
@@ -54,15 +62,6 @@ public class Item implements Serializable {
     public void setUnitPrice(Double unitPrice) {
         this.unitPrice = unitPrice;
     }
-
-    public Date getCreationDate() {
-        return creationDate;
-    }
-
-    public void setCreationDate(Date creationDate) {
-        this.creationDate = creationDate;
-    }
-
     
     public Long getId() {
         return id;
