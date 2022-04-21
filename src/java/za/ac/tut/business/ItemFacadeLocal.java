@@ -15,19 +15,21 @@ import za.ac.tut.entities.Item;
  */
 @Local
 public interface ItemFacadeLocal {
+    void addItem(Item item);
+/*
+    void create(Item item); //persist the item
 
-    void create(Item item);
+    void edit(Item item); //edit the item
 
-    void edit(Item item);
+    void remove(Item item); // remove the item
 
-    void remove(Item item);
+    Item find(Object id); // search item
 
-    Item find(Object id);
+    List<Item> findAll(); // get all the item that are in the table
 
-    List<Item> findAll();
+    List<Item> findRange(int[] range); // find all the item in a range
 
-    List<Item> findRange(int[] range);
-
-    int count();
+    int count(); // get the number of item in the table
+*/
     
 }
