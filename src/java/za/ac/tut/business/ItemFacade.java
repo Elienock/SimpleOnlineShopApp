@@ -34,5 +34,10 @@ public class ItemFacade extends AbstractFacade<Item> implements ItemFacadeLocal 
      //add an item to the database
      create(item);
     }
+
+    @Override
+    public Item findItem(Long itemId) {
+     return find(itemId);
+    }
     
 }

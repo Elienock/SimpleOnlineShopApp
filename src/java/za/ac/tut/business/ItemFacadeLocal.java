@@ -5,7 +5,7 @@
  */
 package za.ac.tut.business;
 
-import java.util.List;
+
 import javax.ejb.Local;
 import za.ac.tut.entities.Item;
 
@@ -16,6 +16,8 @@ import za.ac.tut.entities.Item;
 @Local
 public interface ItemFacadeLocal {
     void addItem(Item item);
+    
+    Item findItem(Long itemId);
 /*
     void create(Item item); //persist the item
 
