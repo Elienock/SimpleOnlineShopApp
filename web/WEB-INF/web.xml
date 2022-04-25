@@ -8,6 +8,10 @@
         <servlet-name>FindItemServlet</servlet-name>
         <servlet-class>za.ac.tut.web.FindItemServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RemoveItemServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.RemoveItemServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddItemServlet</servlet-name>
         <url-pattern>/AddItemServlet.do</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>FindItemServlet</servlet-name>
         <url-pattern>/FindItemServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveItemServlet</servlet-name>
+        <url-pattern>/RemoveItemServlet.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

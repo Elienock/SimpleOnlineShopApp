@@ -19,7 +19,7 @@
         <ul>
             <li><a href="addItem.html">Add an item</a></li>
             <li><a href="findItem.html">Find an item</a></li>
-              <li>Remove an item</li>
+            <li><a href="removeitem.html">Remove an item</a></li>
                <li>Edit an item</li>
                 <li>View all items</li>
                  <li>Determine the number of items</li>

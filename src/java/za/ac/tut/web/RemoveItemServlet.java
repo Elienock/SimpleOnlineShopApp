@@ -20,17 +20,16 @@ import za.ac.tut.entities.Item;
  *
  * @author lubay
  */
-public class FindItemServlet extends HttpServlet {
+public class RemoveItemServlet extends HttpServlet {
 
     @EJB
     private ItemFacadeLocal itemFacade;
 
-   
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //Declare Variables
-        String location = "itemfound.jsp";
+       //Declare Variables
+        String location = "itemremoved_outcome.jsp";
         
        //get the id
        Long itemId = Long.parseLong(request.getParameter("itemId"));
@@ -44,12 +43,13 @@ public class FindItemServlet extends HttpServlet {
            //the item was not found
           location="itemnotfound.jsp";
        }else{
+           itemFacade.removeItem(item);
            request.setAttribute("item", item);
        }
        
        RequestDispatcher disp = request.getRequestDispatcher(location);
        disp.forward(request, response);
     }
+    }
 
-   
-}
+

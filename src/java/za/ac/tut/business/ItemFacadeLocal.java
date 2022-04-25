@@ -18,6 +18,8 @@ public interface ItemFacadeLocal {
     void addItem(Item item);
     
     Item findItem(Long itemId);
+    
+    void removeItem(Item item);
 /*
     void create(Item item); //persist the item
 

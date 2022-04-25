@@ -39,5 +39,10 @@ public class ItemFacade extends AbstractFacade<Item> implements ItemFacadeLocal 
     public Item findItem(Long itemId) {
      return find(itemId);
     }
+
+    @Override
+    public void removeItem(Item item) {
+       remove(item);
+    }
     
 }
